@@ -1,0 +1,31 @@
+uptime
+uptime -p
+uptime -p  ;# comment
+sensors ;# show temperature readings
+systemd-analyze
+journalctl -f ;#follow the system log 
+nmcli device
+nmcli device wifi
+systemctl status
+systemctl list-dependencies
+uname -a   ;# system, kernel info
+df -h      ;#  report file system space usage
+free -h    ;# memory
+lsusb
+lsblk
+lscpu
+lspci
+curl wttr.in  ;#get weather forecast
+tree  ;# list a tree of files
+pstree
+gpg -k
+kate
+kate  ~/.dotfiles/my-commands/commands_list.txt
+konsole -e vim   ~/.dotfiles/my-commands/commands_list.txt
+konsole -e nano  ~/.dotfiles/my-commands/commands_list.txt
+konsole -e tmux
+konsole -e tmux a
+tmux list-sessions
+tmux list-windows
+sudo docker images
+iw dev wlp3s0 info
