@@ -1,7 +1,8 @@
 #!/usr/bin/sh
-echo -e "\e[31m# simple shell script to add the my_commands alias to the alias file\e[0m"
+echo -e "\e[31m# simple shell script to add the my-commands alias to the alias file\e[0m"
 echo "# ~/.bashrc.d/         dir will be created if it does not exist"
 echo "# ~/.bashrc.d/aliases file will be created if it does not exist"
+echo "# ~/.bash_aliases file will be created if it does not exist"
 
 
 main_function() {
