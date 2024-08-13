@@ -31,3 +31,6 @@ sudo docker images
 iw dev wlp3s0 info
 apt-mark showmanual ;# list packages whose installation has been explicitly requested 
 avahi-browse -a 
+networkctl
+lshw 
+lsb_release -cs
