@@ -38,18 +38,18 @@ main_function() {
 # for Fedora
   if grep -Fxq  "$line_to_add_to_aliases"   ~/.bashrc.d/aliases
   then
-    echo ". alias found in file aliases; good, do nothing"
+    echo ". alias found in file ~/.basrc.d/aliases; good, do nothing"
   else
-    echo "! alias not found in file aliases; write it in"
+    echo "! alias not found in file ~/.basrc.d/aliases; write it in"
     echo "$line_to_add_to_aliases"  >> ~/.bashrc.d/aliases
   fi
 
 # for Ubuntu
  if grep -Fxq  "$line_to_add_to_aliases"   ~/.bash_aliases
   then
-    echo ". alias found in file aliases; good, do nothing"
+    echo ". alias found in file  ~/.bash_aliases; good, do nothing"
   else
-    echo "! alias not found in file aliases; write it in"
+    echo "! alias not found in file ~/.bash_aliases; write it in"
     echo "$line_to_add_to_aliases"  >> ~/.bash_aliases
   fi
 
