@@ -14,7 +14,7 @@ main_function() {
     mkdir  ~/.bashrc.d
   fi
 
-  # making sure the aliases file exists
+  # making sure the aliases file exists for Fedora
   if [ -f ~/.bashrc.d/aliases ]
   then
     echo ". file      ~/.bashrc.d/aliases exists, good."
@@ -23,9 +23,19 @@ main_function() {
     touch  ~/.bashrc.d/aliases
   fi
 
+  # making sure the aliases file exists for Ubuntu
+  if [ -f ~/.bash_aliases ]
+  then
+    echo ". file      ~/.bash_aliases exists, good."
+  else
+    echo ". touch  ~/.bash_aliases"
+    touch  ~/.bash_aliases
+  fi
+
   # the key part, adding the alias to the aliases file
   line_to_add_to_aliases="alias my-commands='chosen_command=\$(cat ~/.dotfiles/my-commands/commands_list.txt | fzf ) ; eval \$chosen_command '"
 
+# for Fedora
   if grep -Fxq  "$line_to_add_to_aliases"   ~/.bashrc.d/aliases
   then
     echo ". alias found in file aliases; good, do nothing"
@@ -34,6 +44,16 @@ main_function() {
     echo "$line_to_add_to_aliases"  >> ~/.bashrc.d/aliases
   fi
 
+# for Ubuntu
+ if grep -Fxq  "$line_to_add_to_aliases"   ~/.bash_aliases
+  then
+    echo ". alias found in file aliases; good, do nothing"
+  else
+    echo "! alias not found in file aliases; write it in"
+    echo "$line_to_add_to_aliases"  >> ~/.bash_aliases
+  fi
+
 }
 
+#run the main function
 main_function
