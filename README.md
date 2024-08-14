@@ -10,8 +10,7 @@ Run this:
 
 ```sh
 git clone https://github.com/drgomulka/my-commands.git ~/.dotfiles/my-commands
-cd ~/.dotfiles/my-commands
-install_aliases.sh
+~/.dotfiles/my-commands/install_aliases.sh
 ```
 ## what does this do
 
