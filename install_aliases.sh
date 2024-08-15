@@ -64,9 +64,9 @@ main_function() {
   # the key part, adding the alias to the aliases file
   line_to_add_to_aliases="alias my-commands='chosen_command=\$(cat ~/.dotfiles/my-commands/commands_list.txt | fzf ) ; eval \$chosen_command '"
 
-fedora_style $line_to_add_to_aliases
+fedora_style "$line_to_add_to_aliases"
 
-ubuntu_style $line_to_add_to_aliases
+ubuntu_style "$line_to_add_to_aliases"
 
 }
 
