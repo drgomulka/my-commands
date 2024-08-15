@@ -10,7 +10,6 @@ string_sel="alias my-sel-commands='PS3=\"Select command: \"; mapfile -t items < 
 
 fedora_style(){
 # for Fedora
-
     echo '. mkdir -p ~/.bashrc.d'
     mkdir -p  ~/.bashrc.d
     echo '. touch -a ~/.bashrc.d/aliases'
