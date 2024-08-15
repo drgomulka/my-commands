@@ -8,7 +8,7 @@ string_fzf="alias my-fzf-commands='chosen_command=\$(cat ~/.dotfiles/my-commands
 string_sel="alias my-sel-commands='PS3=\"Select command: \"; mapfile -t items < ~/.dotfiles/my-commands/commands_list.txt; select item in \"\${items[@]}\"; do eval \$item;break; done'"  >> ~/.bash_aliases
 
 
-fedora_style() {
+fedora_style(){
 # for Fedora
 
     echo '. mkdir -p ~/.bashrc.d'
