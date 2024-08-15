@@ -5,8 +5,7 @@ echo '# ~/.bashrc.d/aliases file will be created if it does not exist and system
 echo '# ~/.bash_aliases file will be created if it does not exist and system is Ubuntu style'
 
 string_fzf="alias my-fzf-commands='chosen_command=\$(cat ~/.dotfiles/my-commands/commands_list.txt | fzf ) ; eval \$chosen_command '"
-string_sel="alias my-sel-commands='PS3=\"Select command: \"; mapfile -t items < ~/.dotfiles/my-commands/commands_list.txt; select item in \"\${items[@]}\"; do eval \$item;break; done'"  >> ~/.bash_aliases
-
+string_sel="alias my-sel-commands='PS3=\"Select command: \"; mapfile -t items < ~/.dotfiles/my-commands/commands_list.txt; select item in \"\${items[@]}\"; do eval \$item;break; done'"
 
 fedora_style(){
 # for Fedora
@@ -24,8 +23,6 @@ fedora_style(){
     echo '#### my-commands ####'   >> ~/.bashrc.d/aliases
     echo "$string_fzf"   >> ~/.bashrc.d/aliases
     echo "$string_sel"   >> ~/.bashrc.d/aliases
-    # echo "alias my-fzf-commands='chosen_command=\$(cat ~/.dotfiles/my-commands/commands_list.txt | fzf ) ; eval \$chosen_command '"   >> ~/.bashrc.d/aliases
-    # echo "alias my-sel-commands='PS3=\"Select command: \"; mapfile -t items < ~/.dotfiles/my-commands/commands_list.txt; select item in \"${items[@]}\"; do eval \$item;break; done'"  >> ~/.bashrc.d/aliases
   fi
 }
 
