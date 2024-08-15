@@ -34,3 +34,4 @@ avahi-browse -a
 networkctl
 lshw 
 lsb_release -cs
+cat /proc/cpuinfo | grep MHz  ;# get current cpu core frequencies 
