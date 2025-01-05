@@ -47,13 +47,13 @@ main_function() {
 
   if grep -Fq  '~/.bash_aliases'   ~/.bashrc
     then
-      echo '. .bashrc calls on .bash_aliases: this system is Ubuntu style'
+      echo '. .bashrc calls on ~/.bash_aliases , so this system is Ubuntu style'
       ubuntu_style
    fi
 
-  if grep -Fq  '~/.bashrc.d/aliases' ~/.bashrc
+  if grep -Fq  '~/.bashrc.d/' ~/.bashrc
     then
-      echo '. .bashrc calls on .bashrc.d/aliases: this system is Fedora style'
+      echo '. .bashrc calls on ~/.bashrc.d/ , so this system is Fedora style'
       fedora_style
   fi
 }
