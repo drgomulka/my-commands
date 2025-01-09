@@ -1,6 +1,6 @@
+neofetch
 uptime
-uptime -p
-uptime -p  ;# comment
+uptime -p  ;# uptime pretty
 sensors ;# show temperature readings
 systemd-analyze
 journalctl -f ;#follow the system log 
