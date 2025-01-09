@@ -4,8 +4,8 @@ echo '# ~/.bashrc.d/         dir will be created if it does not exist and system
 echo '# ~/.bashrc.d/aliases file will be created if it does not exist and system is Fedora style'
 echo '# ~/.bash_aliases file will be created if it does not exist and system is Ubuntu style'
 
-string_fzf="alias my-fzf-commands='chosen_command=\$(cat ~/.dotfiles/my-commands/commands_list.txt | fzf ) ; eval \$chosen_command '"
-string_sel="alias my-sel-commands='PS3=\"Select command: \"; mapfile -t items < ~/.dotfiles/my-commands/commands_list.txt; select item in \"\${items[@]}\"; do eval \$item;break; done'"
+string_fzf="alias my-commands-fzf='chosen_command=\$(cat ~/.dotfiles/my-commands/commands_list.txt | fzf ) ; eval \$chosen_command '"
+string_sel="alias my-commands-list='PS3=\"Select command: \"; mapfile -t items < ~/.dotfiles/my-commands/commands_list.txt; select item in \"\${items[@]}\"; do eval \$item;break; done'"
 
 fedora_style(){
 # for Fedora
