@@ -1,3 +1,4 @@
+btop
 neofetch
 uptime
 uptime -p  ;# uptime pretty
@@ -17,7 +18,7 @@ lsblk
 lscpu
 lspci
 curl wttr.in  ;#get weather forecast
-tree  ;# list a tree of files
+tree    ;# list a tree of files
 tree -d ;# list a tree of only directories
 pstree
 gpg -k
@@ -32,9 +33,9 @@ tmux list-windows
 sudo docker images
 iw dev wlp3s0 info
 systemctl start docker
-apt-mark showmanual ;# list packages whose installation has been explicitly requested 
+apt-mark showmanual ;# list packages whose installation has been explicitly requested
 avahi-browse -a 
 networkctl
 lshw 
 lsb_release -cs
-cat /proc/cpuinfo | grep MHz  ;# get current cpu core frequencies 
+cat /proc/cpuinfo | grep MHz  ;# get current cpu core frequencies
