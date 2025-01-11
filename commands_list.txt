@@ -1,3 +1,4 @@
+distro
 btop
 neofetch
 uptime
