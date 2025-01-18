@@ -36,7 +36,7 @@ sudo docker images
 iw dev wlp3s0 info
 systemctl start docker
 apt-mark showmanual ;# list packages whose installation has been explicitly requested
-avahi-browse -a 
+avahi-browse -a    ; # Browse for mDNS/DNS-SD services 
 networkctl
 lshw 
 lsb_release -cs
