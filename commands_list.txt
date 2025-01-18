@@ -1,44 +1,53 @@
-distro
+# BEST AND OFTEN USED
 btop
-neofetch
-iftop
-uptime
-uptime -p  ;# uptime pretty
-sensors ;# show temperature readings
-systemd-analyze
-journalctl -f ;#follow the system log 
+curl wttr.in  ;#get weather forecast
+kate      ;# kate is an editor present on some Linux OS
+tree      ;# list a tree of files
+tree -d   ;# list a tree of only directories
+du -hd2   ;# disk usage in subfolders, human readable, depth 2
+# NETWORK COMMANDS
 nmcli device
 nmcli device wifi
-systemctl status
-systemctl list-dependencies
-uname -a   ;# system, kernel info
-df -h      ;#  report file system space usage
-free -h    ;# memory
-du -hd2
-lsusb
-lsblk
-lscpu
-lspci
-curl wttr.in  ;#get weather forecast
-tree    ;# list a tree of files
-tree -d ;# list a tree of only directories
-pstree
-gpg -k
-kate  ;# kate is an editor present on some Linux OS
-kate  ~/.dotfiles/my-commands/commands_list.txt
-konsole -e vim   ~/.dotfiles/my-commands/commands_list.txt
-konsole -e nano  ~/.dotfiles/my-commands/commands_list.txt
+iftop
+avahi-browse -a    ; # Browse for mDNS/DNS-SD services 
+networkctl
+iw dev wlp3s0 info
+# TMUX
 konsole -e tmux
 konsole -e tmux a
 tmux list-sessions
 tmux list-windows
-sudo docker images
-iw dev wlp3s0 info
-systemctl start docker
+# SYSTEM INFO
+free -h   ;#  report memory
+df -h     ;#  report file system space usage
+pstree
+neofetch
+distro
+uname -a   ;# system, kernel info
+uptime
+uptime -p  ;# uptime pretty
 apt-mark showmanual ;# list packages whose installation has been explicitly requested
-avahi-browse -a    ; # Browse for mDNS/DNS-SD services 
-networkctl
+systemd-analyze
+journalctl -f ;#follow the system log 
+systemctl status
+systemctl list-dependencies
+# HARDWARE INFO
+cat /proc/cpuinfo | grep MHz  ;# get current cpu core frequencies
+lsusb
+lsblk
+lscpu
+lspci
 lshw 
 lsb_release -cs
-cat /proc/cpuinfo | grep MHz  ;# get current cpu core frequencies
+sensors ;# show temperature readings
+# DOCKER
+sudo docker images
+systemctl start docker
+# MY-COMMANDS SELF CARE
 git clone https://github.com/drgomulka/my-commands.git ~/.dotfiles/my-commands   ; # clone or update this project
+kate             ~/.dotfiles/my-commands/commands_list.txt
+konsole -e vim   ~/.dotfiles/my-commands/commands_list.txt
+konsole -e nano  ~/.dotfiles/my-commands/commands_list.txt
+# OTHER
+gpg --list-keys  
+
