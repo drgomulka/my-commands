@@ -1,6 +1,7 @@
 distro
 btop
 neofetch
+iftop
 uptime
 uptime -p  ;# uptime pretty
 sensors ;# show temperature readings
@@ -40,3 +41,4 @@ networkctl
 lshw 
 lsb_release -cs
 cat /proc/cpuinfo | grep MHz  ;# get current cpu core frequencies
+git clone https://github.com/drgomulka/my-commands.git ~/.dotfiles/my-commands   ; # clone or update this project
