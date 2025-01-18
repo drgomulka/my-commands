@@ -25,4 +25,4 @@ The idea here is to use `fzf` to choose a command from a prepared list of comman
 ## my-commands-list
 
 When no fzf is installed, the `mapfile` alternative can be used. 
-It uses  mapfile -t items to rid the commands_list.txt file. Then it uses the bash select ITEM in [LIST] construct to do the selection of your favourite commands. Select by entering the number from the list.  
+It uses  mapfile -t items to read the commands_list.txt file. Then it uses the bash select ITEM in [LIST] construct to do the selection of your favourite commands. Select by entering the number from the list.  
