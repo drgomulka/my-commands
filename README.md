@@ -16,8 +16,8 @@ git clone https://github.com/drgomulka/my-commands.git ~/.dotfiles/my-commands
 
 Install script adds two aliases to your aliases file:
 
-* my-fzf-commands
-* my-sel-commands
+* my-commands-fzf
+* my-commands-list
 
 ## my-fzf-command
 
