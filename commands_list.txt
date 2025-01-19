@@ -47,10 +47,10 @@ systemctl start docker
 # GIT
 git remote -v
 git status
-git log --oneline 
+git log --oneline --graph
 git branch -v
 git show
-git whatchanged --oneline
+git whatchanged --oneline --graph
 git pull --rebase
 git rebase --abort
 # MY-COMMANDS EDIT
