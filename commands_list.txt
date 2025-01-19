@@ -8,6 +8,7 @@ du -hd2   ;# disk usage in subfolders, human readable, depth 2
 # NETWORK COMMANDS
 nmcli device
 nmcli device wifi
+wavemon
 iftop
 avahi-browse -a    ; # Browse for mDNS/DNS-SD services 
 networkctl
