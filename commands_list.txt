@@ -44,7 +44,11 @@ sensors ;# show temperature readings
 # DOCKER
 sudo docker images
 systemctl start docker
-# MY-COMMANDS SELF CARE
+# GIT 
+git remote -v
+git status
+git log --oneline 
+# MY-COMMANDS EDIT
 git clone https://github.com/drgomulka/my-commands.git ~/.dotfiles/my-commands   ; # clone or update this project
 kate             ~/.dotfiles/my-commands/commands_list.txt
 konsole -e vim   ~/.dotfiles/my-commands/commands_list.txt
