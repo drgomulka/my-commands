@@ -48,10 +48,11 @@ systemctl start docker
 git remote -v
 git status
 git log --oneline 
-git pull --rebase
-git rebase --abort
 git branch -v
 git show
+git whatchanged --oneline
+git pull --rebase
+git rebase --abort
 # MY-COMMANDS EDIT
 git clone https://github.com/drgomulka/my-commands.git ~/.dotfiles/my-commands   ; # clone this project
 kate             ~/.dotfiles/my-commands/commands_list.txt
