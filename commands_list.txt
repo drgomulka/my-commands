@@ -23,6 +23,8 @@ free -h   ;#  report memory
 df -h     ;#  report file system space usage
 pstree
 neofetch
+cpufetch
+cpuinfo
 distro
 uname -a   ;# system, kernel info
 uptime
