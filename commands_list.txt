@@ -32,6 +32,8 @@ systemd-analyze
 journalctl -f ;#follow the system log 
 systemctl status
 systemctl list-dependencies
+swapon
+zramctl
 # HARDWARE INFO
 cat /proc/cpuinfo | grep MHz  ;# get current cpu core frequencies
 lsusb
