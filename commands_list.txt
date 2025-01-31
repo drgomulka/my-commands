@@ -34,6 +34,7 @@ systemd-analyze
 journalctl -f ;#follow the system log 
 systemctl status
 systemctl list-dependencies
+systemctl suspend
 swapon
 zramctl
 # HARDWARE INFO
