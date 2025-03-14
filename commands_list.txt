@@ -65,4 +65,20 @@ konsole -e vim   ~/.dotfiles/my-commands/commands_list.txt
 konsole -e nano  ~/.dotfiles/my-commands/commands_list.txt
 # OTHER
 gpg --list-keys  
-
+# NEW
+htop
+vmstat 1
+iostat 1
+mpstat -P ALL 1
+iotop
+iostat -dx 1
+netstat -tulnp
+pidstat 1
+smem -t
+watch -n 1 cat /proc/meminfo
+ss -tulnp
+bmon
+watch -n 1 ss -tulnp
+dmesg | tail -20
+powertop
+ulimit -a 
