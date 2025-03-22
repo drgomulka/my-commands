@@ -46,6 +46,7 @@ lspci
 lshw 
 lsb_release -cs
 sensors ;# show temperature readings
+watch -n 1 sensors
 # DOCKER
 sudo docker images
 systemctl start docker
