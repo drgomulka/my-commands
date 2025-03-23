@@ -1,23 +1,11 @@
 # BEST AND OFTEN USED
 btop
+htop
 curl wttr.in  ;#get weather forecast
 kate      ;# kate is an editor present on some Linux OS
 tree      ;# list a tree of files
 tree -d   ;# list a tree of only directories
 du -hd2   ;# disk usage in subfolders, human readable, depth 2
-# NETWORK COMMANDS
-nmcli device
-nmcli device wifi
-wavemon
-iftop
-avahi-browse -a    ; # Browse for mDNS/DNS-SD services 
-networkctl
-iw dev wlp3s0 info
-# TMUX
-konsole -e tmux
-konsole -e tmux a
-tmux list-sessions
-tmux list-windows
 # SYSTEM INFO
 free -h   ;#  report memory
 df -h     ;#  report file system space usage
@@ -31,12 +19,24 @@ uptime
 uptime -p  ;# uptime pretty
 apt-mark showmanual ;# list packages whose installation has been explicitly requested
 systemd-analyze
-journalctl -f ;#follow the system log 
 systemctl status
 systemctl list-dependencies
 systemctl suspend
 swapon
 zramctl
+journalctl -f ;#follow the system log 
+dmesg | tail -20  ;# Print kernel ring buffer
+# NETWORK COMMANDS
+nmcli device
+nmcli device wifi
+wavemon
+iftop
+avahi-browse -a    ; # Browse for mDNS/DNS-SD services 
+networkctl
+iw dev wlp3s0 info
+ss -tulnp  ;# Dump socket statistics
+watch -n 5 ss -tulnp
+netstat -tulnp   ;# Print network connections
 # HARDWARE INFO
 cat /proc/cpuinfo | grep MHz  ;# get current cpu core frequencies
 lsusb
@@ -47,6 +47,13 @@ lshw
 lsb_release -cs
 sensors ;# show temperature readings
 watch -n 1 sensors
+watch -n 5 cat /proc/meminfo  
+vmstat 5  ;# Report virtual memory statistics
+# TMUX
+konsole -e tmux
+konsole -e tmux a
+tmux list-sessions
+tmux list-windows
 # DOCKER
 sudo docker images
 systemctl start docker
@@ -66,20 +73,10 @@ konsole -e vim   ~/.dotfiles/my-commands/commands_list.txt
 konsole -e nano  ~/.dotfiles/my-commands/commands_list.txt
 # OTHER
 gpg --list-keys  
-# NEW
-htop
-vmstat 1
-iostat 1
-mpstat -P ALL 1
-iotop
-iostat -dx 1
-netstat -tulnp
-pidstat 1
-smem -t
-watch -n 1 cat /proc/meminfo
-ss -tulnp
+# NOT INSTALLED
+mpstat -P ALL 5
+iostat -dx 5
+pidstat 5
 bmon
-watch -n 1 ss -tulnp
-dmesg | tail -20
+iotop
 powertop
-ulimit -a 
