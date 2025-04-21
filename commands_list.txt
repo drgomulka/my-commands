@@ -37,6 +37,11 @@ iw dev wlp3s0 info
 ss -tulnp  ;# Dump socket statistics
 watch -n 5 ss -tulnp
 netstat -tulnp   ;# Print network connections
+ip neighbor
+ip address
+ip route
+ip rule
+ip monitor
 # HARDWARE INFO
 cat /proc/cpuinfo | grep MHz  ;# get current cpu core frequencies
 lsusb
