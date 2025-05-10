@@ -42,6 +42,7 @@ ip address
 ip route
 ip rule
 ip monitor
+sudo nmap -sn 192.168.1.0/24
 # HARDWARE INFO
 cat /proc/cpuinfo | grep MHz  ;# get current cpu core frequencies
 lsusb
