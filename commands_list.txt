@@ -55,6 +55,9 @@ sensors ;# show temperature readings
 watch -n 1 sensors
 watch -n 5 cat /proc/meminfo  
 vmstat 5  ;# Report virtual memory statistics
+# AUDIO HARDWARE INFO
+cat /proc/asound/cards
+aplay -l
 # TMUX
 konsole -e tmux
 konsole -e tmux a
