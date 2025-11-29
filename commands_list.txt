@@ -58,6 +58,7 @@ vmstat 5  ;# Report virtual memory statistics
 # AUDIO HARDWARE INFO
 cat /proc/asound/cards
 aplay -l
+pavucontrol-qt
 # TMUX
 konsole -e tmux
 konsole -e tmux a
