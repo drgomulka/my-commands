@@ -56,10 +56,13 @@ watch -n 1 sensors
 watch -n 5 cat /proc/meminfo  
 vmstat 5  ;# Report virtual memory statistics
 # AUDIO HARDWARE INFO
-cat /proc/asound/cards
+alsamixer
 aplay -l
-pavucontrol-qt
 alsactl info
+pavucontrol-qt
+cat /proc/asound/cards
+cat /proc/asound/devices
+cat /proc/asound/pcm
 # TMUX
 konsole -e tmux
 konsole -e tmux a
