@@ -63,6 +63,7 @@ pavucontrol-qt
 cat /proc/asound/cards
 cat /proc/asound/devices
 cat /proc/asound/pcm
+pacmd
 # TMUX
 konsole -e tmux
 konsole -e tmux a
