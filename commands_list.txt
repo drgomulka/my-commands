@@ -54,6 +54,7 @@ lsb_release -cs
 sensors ;# show temperature readings
 watch -n 1 sensors
 watch -n 5 cat /proc/meminfo  
+cat /proc/meminfo | grep -E 'Mem|Swap|Cache'
 vmstat 5  ;# Report virtual memory statistics
 # AUDIO HARDWARE INFO
 alsamixer
