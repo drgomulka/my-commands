@@ -26,6 +26,7 @@ swapon
 zramctl
 journalctl -f ;#follow the system log 
 dmesg | tail -20  ;# Print kernel ring buffer
+sudo cat  /sys/kernel/debug/suspend_stats
 # NETWORK COMMANDS
 nmcli device
 nmcli device wifi
