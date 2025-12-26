@@ -6,6 +6,7 @@ kate      ;# kate is an editor present on some Linux OS
 tree      ;# list a tree of files
 tree -d   ;# list a tree of only directories
 du -hd2   ;# disk usage in subfolders, human readable, depth 2
+fzf --preview='head -$LINES {}'
 # SYSTEM INFO
 free -h   ;#  report memory
 df -h     ;#  report file system space usage
