@@ -58,6 +58,7 @@ watch -n 1 sensors
 watch -n 5 cat /proc/meminfo  
 cat /proc/meminfo | grep -E 'Mem|Swap|Cache'
 vmstat 5  ;# Report virtual memory statistics
+glxinfo -B  ;# graphics info
 # AUDIO HARDWARE INFO
 alsamixer
 aplay -l
